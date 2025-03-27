@@ -1,0 +1,59 @@
+.modal-container {
+  @apply fixed inset-0 z-50 overflow-y-auto;
+}
+
+.modal-backdrop {
+  @apply fixed inset-0 bg-gray-500 bg-opacity-75 backdrop-blur-sm transition-opacity;
+}
+
+.modal-content {
+  @apply relative bg-white dark:bg-gray-900 rounded-lg shadow-xl max-w-md w-full mx-auto;
+}
+
+.modal-header {
+  @apply flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.modal-title {
+  @apply text-lg font-medium text-gray-900 dark:text-white;
+}
+
+.close-button {
+  @apply rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:hover:text-gray-300;
+}
+
+.close-icon {
+  @apply h-5 w-5;
+}
+
+.modal-body {
+  @apply p-4;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-800 dark:text-white;
+}
+
+.modal-footer {
+  @apply flex justify-end space-x-3 p-4 border-t border-gray-200 dark:border-gray-700;
+}
+
+.cancel-button {
+  @apply px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:bg-gray-700;
+}
+
+.create-button {
+  @apply px-4 py-2 text-sm font-medium text-white bg-primary-600 border border-transparent rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+}
+
+.error-message {
+  @apply mt-1 text-sm text-red-600 dark:text-red-400;
+} 
