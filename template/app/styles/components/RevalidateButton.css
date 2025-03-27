@@ -1,0 +1,23 @@
+.button {
+  @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+}
+
+.button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.icon {
+  @apply -ml-1 mr-2 h-4 w-4;
+}
+
+.spinner {
+  @apply animate-spin;
+}
+
+.success-message {
+  @apply text-sm text-green-600 dark:text-green-400;
+}
+
+.error-message {
+  @apply text-sm text-red-600 dark:text-red-400;
+} 

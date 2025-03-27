@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supawald - Transform Your Supabase Storage into a Powerful CMS</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="nav-container">
+                <div class="logo">
+                    <a href="#hero">
+                        <img src="assets/logo.svg" alt="Supawald Logo">
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="https://join.slack.com/t/structuredlabs-users/shared_invite/zt-31vvfitfm-_vG1HR9hYysR_56u_PfI8Q" class="nav-link" target="_blank" rel="noopener noreferrer">Community</a>
+                    <a href="https://github.com/StructuredLabs/supawald" class="github-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://cal.com/amruthagujjar" class="demo-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-calendar"></i>
+                        <span>Book a Demo</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-button" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="mobile-nav-links">
+                <a href="#features" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    Features
+                </a>
+                <a href="https://join.slack.com/t/structuredlabs-users/shared_invite/zt-31vvfitfm-_vG1HR9hYysR_56u_PfI8Q" class="mobile-nav-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-slack"></i>
+                    Community
+                </a>
+                <a href="https://github.com/StructuredLabs/supawald" class="mobile-nav-link github-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://cal.com/amruthagujjar" class="mobile-nav-link demo-link" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-calendar"></i>
+                    Book a Demo
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero-content">
+                    <h1>Transform your Supabase Storage into a powerful CMS</h1>
+                    <p class="subtitle">Beautiful, intuitive interface for managing your content. Built for developers who want a simple, powerful way to handle their assets.</p>
+                    <div class="code-block terminal">
+                        <div class="terminal-content">
+                            <pre><code class="copyable">npx create-supawald my-app</code></pre>
+                            <button class="copy-button" aria-label="Copy to clipboard">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="cms-preview">
+                        <div class="cms-header">
+                            <div class="cms-breadcrumb">
+                                <i class="fas fa-chevron-left" style="font-size: 12px; opacity: 0.5;"></i>
+                                <span class="cms-path">
+                                    <span class="path-segment">Projects</span>
+                                    <span class="path-separator">/</span>
+                                    <span class="path-segment">Marketing Site</span>
+                                    <span class="path-separator">/</span>
+                                    <span class="path-segment">Assets</span>
+                                </span>
+                            </div>
+                            <div class="cms-actions">
+                                <div class="cms-button close"></div>
+                                <div class="cms-button minimize"></div>
+                                <div class="cms-button maximize"></div>
+                            </div>
+                        </div>
+                        <div class="cms-layout">
+                            <div class="cms-sidebar">
+                                <div class="cms-nav-item active">
+                                    <i class="fas fa-home nav-icon"></i>
+                                    <div class="nav-label">Overview</div>
+                                </div>
+                                <div class="cms-nav-item">
+                                    <i class="fas fa-folder nav-icon"></i>
+                                    <div class="nav-label">Files</div>
+                                </div>
+                                <div class="cms-nav-item">
+                                    <i class="fas fa-image nav-icon"></i>
+                                    <div class="nav-label">Media</div>
+                                </div>
+                                <div class="cms-nav-item">
+                                    <i class="fas fa-users nav-icon"></i>
+                                    <div class="nav-label">Team</div>
+                                </div>
+                                <div class="cms-nav-item">
+                                    <i class="fas fa-cog nav-icon"></i>
+                                    <div class="nav-label">Settings</div>
+                                </div>
+                            </div>
+                            <div class="cms-main">
+                                <div class="cms-toolbar">
+                                    <div class="search-bar">
+                                        <i class="fas fa-search search-icon"></i>
+                                        <div class="search-input">Search files and folders...</div>
+                                    </div>
+                                    <div class="toolbar-actions">
+                                        <button class="action-button">
+                                            <i class="fas fa-filter"></i>
+                                        </button>
+                                        <button class="action-button primary">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cms-content">
+                                    <div class="cms-grid">
+                                        <div class="cms-file">
+                                            <i class="fas fa-file-alt file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">homepage.json</div>
+                                                <div class="file-meta">Modified 2h ago</div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-file">
+                                            <i class="fas fa-image file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">hero-banner.png</div>
+                                                <div class="file-meta">Modified 1d ago</div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-file">
+                                            <i class="fas fa-folder file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">blog-posts</div>
+                                                <div class="file-meta">12 items</div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-file">
+                                            <i class="fas fa-file-image file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">team-photos</div>
+                                                <div class="file-meta">8 items</div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-file">
+                                            <i class="fas fa-file-code file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">navigation.yaml</div>
+                                                <div class="file-meta">Modified 3d ago</div>
+                                            </div>
+                                        </div>
+                                        <div class="cms-file">
+                                            <i class="fas fa-folder file-icon"></i>
+                                            <div class="file-info">
+                                                <div class="file-name">products</div>
+                                                <div class="file-meta">24 items</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section class="features" id="features">
+                <h2>Everything You Need to Manage Content with Supabase</h2>
+                <p>Supawald turns your Supabase Storage into a modern, file-based CMS. Perfect for developers building with Next.js, Tailwind, and TypeScript.</p>
+              
+                <div class="feature-grid">
+                  <div class="feature-card">
+                    <i class="fas fa-folder-open"></i>
+                    <h3>Visual File Explorer</h3>
+                    <p>Navigate and manage folders and files inside your Supabase Storage with an intuitive, drag-and-drop interface.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-edit"></i>
+                    <h3>In-Browser File Editing</h3>
+                    <p>Edit Markdown, text, and other plain files directly inside your browser — no need to clone or pull from anywhere.</p>
+                  </div>
+
+                  <div class="feature-card">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Markdown Previews</h3>
+                    <p>Preview Markdown content in real-time with styled rendering. Perfect for managing blog posts, docs, and rich content.</p>
+                  </div>                  
+              
+                  <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Access Control</h3>
+                    <p>Protect your storage with optional auth credentials. Supports public/private buckets and integrates with Supabase RLS.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Real-Time Updates</h3>
+                    <p>Powered by Supabase subscriptions, changes are reflected instantly — no refresh required.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Static Site Integration</h3>
+                    <p>Includes a built-in publish API for regenerating your static site pages. Perfect for blogs, product pages, and media-heavy content.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-terminal"></i>
+                    <h3>Developer First</h3>
+                    <p>Built with Next.js 14, Tailwind CSS, and TypeScript. Easily extend, self-host, or integrate with your existing stack.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Supabase Native</h3>
+                    <p>Built on top of Supabase Storage, using its APIs directly. No proprietary vendor lock-in or abstraction layer in the way.</p>
+                  </div>
+              
+                  <div class="feature-card">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>Open Source</h3>
+                    <p>Apache 2.0-licensed and fully open source. Use it, fork it, modify it — no limitations, no paywalls, ever.</p>
+                  </div>
+                </div>
+            </section>
+              
+            <!-- Getting Started Section -->
+            <section class="getting-started" id="getting-started">
+                <h2>Start building in three simple steps</h2>
+                <div class="steps">
+                  <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Initialize Your Project</h3>
+                    <p>Kickstart a production-ready CMS with a single command. Supawald sets up everything you need to manage content via Supabase Storage.</p>
+                    <pre><code>npx create-supawald my-app</code></pre>
+                  </div>
+              
+                  <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Connect to Supabase</h3>
+                    <p>Link your project to Supabase by configuring your credentials. You'll get real-time updates, secure access, and SSG support out of the box.</p>
+                    <pre><code>cp .env.example .env.local</code></pre>
+                  </div>
+              
+                  <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Launch Your CMS</h3>
+                    <p>Install dependencies and start building. You'll have a modern, file-based CMS ready in seconds — perfect for blogs, products, or anything in between.</p>
+                    <pre><code>npm install && npm run dev</code></pre>
+                  </div>
+                </div>
+              </section>
+              
+            <!-- Call to Action Section -->
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>Open-source at its core. Enterprise when you need it.</h2>
+                    <p>Use it your way. Start for free or book a demo for enterprise support.</p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/StructuredLabs/supawald" class="button primary" target="_blank" rel="noopener noreferrer">Get started</a>
+                        <a href="https://cal.com/amruthagujjar" class="button secondary" target="_blank" rel="noopener noreferrer">Book a demo</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="https://structuredlabs.com" target="_blank" rel="noopener noreferrer" class="footer-link">
+                        <img src="assets/symbol.svg" alt="Structured Labs Logo" class="footer-logo" style="height: 20px; margin-right: 4px; vertical-align: middle;">
+                        Built by Structured Labs, Inc.</a>
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.linkedin.com/company/structuredlabs/" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/StructuredLabs" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/StructuredLabs" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://join.slack.com/t/structuredlabs-users/shared_invite/zt-31vvfitfm-_vG1HR9hYysR_56u_PfI8Q" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-slack"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        const button = document.querySelector('.copy-button');
+        button.addEventListener('click', () => {
+            navigator.clipboard.writeText('npx create-supawald my-app');
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenuClose = document.querySelector('.mobile-menu-close');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const body = document.body;
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+        mobileMenuClose.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+</html> 

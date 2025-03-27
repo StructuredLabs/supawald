@@ -1,0 +1,141 @@
+.modal-container {
+  @apply fixed inset-0 z-50 overflow-y-auto;
+}
+
+.modal-backdrop {
+  @apply fixed inset-0 bg-gray-500 bg-opacity-75 backdrop-blur-sm transition-opacity;
+}
+
+.modal-content {
+  @apply relative bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden;
+}
+
+.modal-header {
+  @apply flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.modal-title {
+  @apply text-lg font-medium text-gray-900 dark:text-white;
+}
+
+.btn-icon {
+  @apply rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:hover:text-gray-300;
+}
+
+.icon {
+  @apply h-5 w-5;
+}
+
+.icon-sm {
+  @apply h-4 w-4;
+}
+
+.loading-spinner {
+  @apply h-8 w-8 animate-spin rounded-full border-2 border-gray-300 border-t-gray-900 dark:border-gray-600 dark:border-t-gray-300;
+}
+
+.loading-text {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+/* Markdown content styles */
+.markdown-content {
+  @apply h-full overflow-auto p-8 prose prose-slate dark:prose-invert max-w-none;
+}
+
+.markdown-content h1 {
+  @apply text-3xl font-bold mb-4;
+}
+
+.markdown-content h2 {
+  @apply text-2xl font-bold mb-3;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-bold mb-2;
+}
+
+.markdown-content p {
+  @apply mb-4 leading-relaxed;
+}
+
+.markdown-content ul {
+  @apply list-disc list-outside ml-4 mb-4 space-y-1;
+}
+
+.markdown-content ol {
+  @apply list-decimal list-outside ml-4 mb-4 space-y-1;
+}
+
+.markdown-content li {
+  @apply mb-1;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-600 pl-4 my-4 italic;
+}
+
+.markdown-content code {
+  @apply rounded-md bg-gray-100 px-1.5 py-0.5 font-mono text-sm dark:bg-gray-800;
+}
+
+.markdown-content pre {
+  @apply bg-gray-100 dark:bg-gray-800 rounded-lg p-4 mb-4 overflow-x-auto;
+}
+
+.markdown-content img {
+  @apply rounded-lg max-w-full h-auto my-4;
+}
+
+.markdown-content a {
+  @apply text-blue-600 hover:text-blue-800 underline dark:text-blue-400 dark:hover:text-blue-300;
+}
+
+.markdown-content table {
+  @apply min-w-full border-separate border-spacing-0 my-4;
+}
+
+.markdown-content th {
+  @apply border-b-2 dark:border-gray-600 p-2 text-left font-bold bg-gray-50 dark:bg-gray-900;
+}
+
+.markdown-content td {
+  @apply p-2 border-b dark:border-gray-700;
+}
+
+.markdown-content hr {
+  @apply my-8 border-t border-gray-300 dark:border-gray-600;
+}
+
+.markdown-content strong {
+  @apply font-bold;
+}
+
+.markdown-content em {
+  @apply italic;
+}
+
+/* Frontmatter styles */
+.frontmatter-container {
+  @apply mb-8 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg;
+}
+
+.frontmatter-title {
+  @apply text-2xl font-bold mb-2;
+}
+
+.frontmatter-meta {
+  @apply flex items-center space-x-4 text-sm text-gray-600 dark:text-gray-400;
+}
+
+.frontmatter-description {
+  @apply mt-2 text-gray-700 dark:text-gray-300;
+}
+
+.frontmatter-tags {
+  @apply mt-2 flex flex-wrap gap-2;
+}
+
+.frontmatter-tag {
+  @apply px-2 py-1 bg-gray-200 dark:bg-gray-700 rounded text-sm;
+} 

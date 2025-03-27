@@ -1,0 +1,55 @@
+.file-list {
+  @apply space-y-2;
+}
+
+.file-item {
+  @apply flex items-center justify-between p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors;
+}
+
+.file-item-content {
+  @apply flex items-center space-x-2 flex-1;
+}
+
+.file-icon {
+  @apply h-5 w-5 text-gray-500 dark:text-gray-400;
+}
+
+.file-name {
+  @apply text-sm font-medium text-gray-900 dark:text-white truncate;
+}
+
+.file-actions {
+  @apply flex items-center space-x-2;
+}
+
+.action-button {
+  @apply p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700;
+}
+
+.action-icon {
+  @apply h-4 w-4;
+}
+
+.folder-item {
+  @apply flex items-center space-x-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer;
+}
+
+.folder-icon {
+  @apply h-5 w-5 text-gray-500 dark:text-gray-400;
+}
+
+.folder-name {
+  @apply text-sm font-medium text-gray-900 dark:text-white;
+}
+
+.empty-state {
+  @apply flex flex-col items-center justify-center p-8 text-center;
+}
+
+.empty-icon {
+  @apply h-12 w-12 text-gray-400 dark:text-gray-500 mb-4;
+}
+
+.empty-text {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+} 

@@ -1,0 +1,71 @@
+.modal-container {
+  @apply fixed inset-0 z-50 overflow-y-auto;
+}
+
+.modal-backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-75 backdrop-blur-sm transition-opacity;
+}
+
+.modal-content {
+  @apply relative bg-white dark:bg-gray-900 rounded-lg shadow-xl overflow-hidden max-w-4xl w-full mx-auto;
+}
+
+.modal-header {
+  @apply flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700;
+}
+
+.modal-title {
+  @apply text-lg font-medium text-gray-900 dark:text-white;
+}
+
+.btn-icon {
+  @apply rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 dark:hover:text-gray-300;
+}
+
+.icon {
+  @apply h-5 w-5;
+}
+
+.close-button {
+  @apply p-2 text-white hover:text-gray-300 rounded-full hover:bg-black/50 transition-colors;
+}
+
+.close-icon {
+  @apply h-6 w-6;
+}
+
+.image-container {
+  @apply flex items-center justify-center p-4;
+}
+
+.modal-image {
+  @apply max-w-full max-h-[70vh] object-contain rounded-lg;
+}
+
+.loading-container {
+  @apply flex items-center justify-center min-h-screen;
+}
+
+.loading-spinner {
+  @apply h-8 w-8 animate-spin rounded-full border-2 border-gray-300 border-t-gray-900 dark:border-gray-600 dark:border-t-gray-300;
+}
+
+.loading-text {
+  @apply text-sm text-gray-500 dark:text-gray-400;
+}
+
+.error-container {
+  @apply flex flex-col items-center justify-center min-h-screen text-white;
+}
+
+.error-icon {
+  @apply h-12 w-12 mb-4;
+}
+
+.error-text {
+  @apply text-lg font-medium;
+}
+
+.error-details {
+  @apply text-sm opacity-75 mt-2;
+} 
