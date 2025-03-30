@@ -1,6 +1,6 @@
 {
   "name": "create-supawald",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create a Supawald project – a headless CMS for Supabase Storage",
   "repository": {
     "type": "git",
@@ -13,6 +13,10 @@
   "bin": {
     "create-supawald": "./create.js"
   },
+  "files": [
+    "create.js",
+    "template/**"
+  ],
   "dependencies": {
     "fs-extra": "^11.1.1"
   },
