@@ -1,6 +1,6 @@
 {
   "name": "create-supawald",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a Supawald project – a headless CMS for Supabase Storage",
   "repository": {
     "type": "git",
