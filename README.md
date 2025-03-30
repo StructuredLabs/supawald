@@ -86,12 +86,23 @@ Supawald is a file management system that turns Supabase Storage into a full-fea
 
 ## ▶️ Quick Start
 
-1. **Clone and Install**
-   ```bash
-   git clone https://github.com/yourusername/supawald.git
-   cd supawald
-   npm install
-   ```
+### Use the CLI
+
+```bash
+npx create-supawald my-app
+cd my-app
+npm install
+npm run dev
+```
+
+### Or clone manually
+
+```bash
+git clone https://github.com/yourusername/supawald.git
+cd supawald/template
+npm install
+npm run dev
+```
 
 2. **Set Up Supabase**
    ```sql
