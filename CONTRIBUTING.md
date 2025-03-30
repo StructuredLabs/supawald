@@ -93,4 +93,64 @@ By participating in this project, you agree to abide by our Code of Conduct. Ple
 
 Feel free to open an issue for any questions or concerns about contributing.
 
-Thank you for contributing to Supawald! 
+Thank you for contributing to Supawald!
+
+## 📦 Publishing to npm
+
+To publish updates to the `create-supawald` package and tie it to the GitHub repo, follow these steps:
+
+### 🔗 1. Add GitHub Metadata to `package.json`
+
+Make sure the root-level `package.json` includes this:
+
+```json
+"repository": {
+  "type": "git",
+  "url": "https://github.com/StructuredLabs/supawald.git"
+},
+"bugs": {
+  "url": "https://github.com/StructuredLabs/supawald/issues"
+},
+"homepage": "https://github.com/StructuredLabs/supawald#readme"
+```
+
+> This links the npm package back to the official GitHub repo.
+
+---
+
+### 🏷️ 2. Tag the Release in Git
+
+After bumping the version in `package.json`, tag and push the release:
+
+```bash
+git add .
+git commit -m "v1.0.0 release"
+git tag v1.0.0
+git push origin main --tags
+```
+
+Use the same version number as in `package.json`.
+
+---
+
+### 🚀 3. Publish to npm
+
+If you're not already logged in:
+
+```bash
+npm login
+```
+
+Then publish the package:
+
+```bash
+npm publish --access public
+```
+
+> The CLI will then be available via:
+
+```bash
+npx create-supawald my-app
+```
+
+--- 
