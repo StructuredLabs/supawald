@@ -2,6 +2,14 @@
   "name": "create-supawald",
   "version": "1.0.0",
   "description": "Create a Supawald project – a headless CMS for Supabase Storage",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StructuredLabs/supawald.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StructuredLabs/supawald/issues"
+  },
+  "homepage": "https://github.com/StructuredLabs/supawald#readme",
   "bin": {
     "create-supawald": "./create.js"
   },
