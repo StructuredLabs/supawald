@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/public/SupawaldBanner.png" alt="Supawald Banner">
+  <img src="/template/public/SupawaldBanner.png" alt="Supawald Banner">
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@
 
 A headless CMS for Supabase Storage. Built with Next.js 14, TypeScript, and Tailwind CSS. Provides a clean interface for managing files in Supabase Storage buckets with real-time updates and static site generation support.
 
-![Supawald Screenshot](/public/images/viewbucket.png)
+![Supawald Screenshot](/template/public/images/viewbucket.png)
 
 ## What is Supawald?
 
@@ -56,8 +56,8 @@ Supawald is a file management system that turns Supabase Storage into a full-fea
 
 <table>
   <tr>
-    <td><img src="/public/images/viewmarkdown.png" alt="Supawald Screenshot" width="100%"></td>
-    <td><img src="/public/images/viewimage.png" alt="Supawald Screenshot" width="100%"></td>
+    <td><img src="/template/public/images/viewmarkdown.png" alt="Supawald Screenshot" width="100%"></td>
+    <td><img src="/template/public/images/viewimage.png" alt="Supawald Screenshot" width="100%"></td>
   </tr>
 </table>
 
